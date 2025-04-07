@@ -11,11 +11,8 @@
 
 with source_data as (
 
-
     select  payment_type ,customer_name  ,sale_time,sale_id  from zone3_sales_data.sales s 
     inner join zone3_sales_data.customer c on c.customer_id  = s.customer_id
-
-
 
 )
 
