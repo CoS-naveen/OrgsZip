@@ -7,7 +7,7 @@ with source_data as (
     join {{ ref ('product_stg') }} pr
     on pr.brand_id = br.brand_id
     join zone3_sales_data.product_prices pp on pp.product_id = pr.product_id
-)
+) 
 
 select *
 from source_data
